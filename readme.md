@@ -32,6 +32,18 @@
 |- README.md                # Documentation file
 </code></pre>
 
+<h2>Database Setup</h2>
+<p>This project uses MySQL with XAMPP as the database. To set up the necessary table:</p>
+<pre><code>
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+</code></pre>
+<p>Ensure your XAMPP server is running and create the 'users' table within your MySQL database.</p>
+
 <h2>Getting Started</h2>
 <p>Clone the repository:</p>
 <pre><code>
